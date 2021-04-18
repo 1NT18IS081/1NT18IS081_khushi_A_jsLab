@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fibonacci</title>
+        <style>
+            body {
+                background-color: rgb(160, 105, 211);    
+                text-align: center;
+                font-family: verdana;    }
+        </style>
+    </head>
+  <body>
+    <h1>
+      FIBONACCI SERIES!!
+    </h1><br><br>
+    <script type="text/javascript">
+      var limit = prompt(
+        "Enter a number to find its Fibonacci series:",
+        
+      );
+      var f1 = 0;
+      var f2 = 1;
+
+      document.write(
+        "Number entered is: ",
+        limit,
+        "<br/>"
+      );
+      document.write("The fibonacci series is: ");
+      document.write("", f1, " ");
+      document.write("", f2, " ");
+
+      var i, f3;
+      for (i = 2; i < limit; i++) {
+        f3 = f1 + f2;
+        document.write("", f3, " ");
+        f1 = f2;
+        f2 = f3;
+      }
+    </script>
+  </body>
+</html>
