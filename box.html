@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Game</title>
+    <style>
+        #ob1 {
+            width: 500px;
+            height: 500px;
+            background: #9FE2BF;
+            border: 15px#9FE2BF;
+        }
+
+        #ob1 #ob2 {
+            width: 350px;
+            height: 350px;
+            background: #40E0D0;
+            border: 15px #40E0D0;
+        }
+
+        #ob1 #ob2 #ob3 {
+            width: 250px;
+            height: 250px;
+            background: #6495ED;
+            border: 15px #6495ED;
+        }
+
+        #ob1 #ob2 #ob3 #ob4 {
+            width: 120px;
+            height: 120px;
+            background: #CCCCFF;
+            border: 15px #6495ED;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ob1">
+        <div id="ob2">
+            <div id="ob3">
+                <div id="ob4">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const ob1 = document.getElementById("ob1");
+        const ob2 = document.getElementById("ob2");
+        const ob3 = document.getElementById("ob3");
+        const ob4 = document.getElementById("ob4");
+
+        let flag = false;
+        ob1.addEventListener('mouseenter', () => {
+            console.log("Entered area 1");
+        });
+
+        ob2.addEventListener('mouseenter', () => {
+            console.log("Entered area 2");
+        });
+
+        ob3.addEventListener('mouseenter', () => {
+            console.log("entered area 3");
+        });
+
+        ob4.addEventListener('mouseenter', () => {
+            console.log("danger ghost is over here");
+        });
+    </script>
+</body>
+
+</html>
