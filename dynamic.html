@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dynamic</title>
+    <style>
+        button{
+            color: rgb(0, 0, 0);
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="text-align: center; background-color: #6495ED;">
+
+    <label style="font-size: 50px;"><b>Try this button: </b></label>
+    <button id="myBtn">Try Me!</button>
+    <script>
+        document.getElementById("myBtn").addEventListener("mouseover", addElem);
+        document.getElementById("myBtn").addEventListener("mouseout", addElem1);
+        document.getElementById("myBtn").addEventListener("click", addElem2);
+
+
+       
+        function addElem() {
+          let b = document.createElement("p");
+          document.body.append(b)
+          b.innerText = "This was dynamically created by mouseover"
+          b.style.fontSize = "30px"
+          b.style.color = "#003061 "
+        }
+
+        function addElem1() {
+          let a = document.createElement("p");
+          document.body.append(a)
+          a.innerText = "This was dynamically created by mouseout"
+          a.style.fontSize = "30px"
+          a.style.color = "#003061 "
+        }
+
+        function addElem2() {
+          let c = document.createElement("p");
+          document.body.append(c)
+          c.innerText = "Clicked"
+          c.style.fontSize = "30px"
+          c.style.color = "#003061 "
+        }
+    </script>
+</body>
+</html>
