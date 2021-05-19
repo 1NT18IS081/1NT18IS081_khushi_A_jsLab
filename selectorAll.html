@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body { 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<br><br><br>
+<h2 class="example">Here's an example <title></title></h2>
+<p class="example">This paragraph consists of the word example</p> 
+
+<p>Click here to add background color to the elements with the word title</p>
+
+<button onclick="myFunction()">Click Here</button>
+
+
+
+<script>
+function myFunction() {
+  var x, i;
+  x = document.querySelectorAll(".example");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#CD5C5C";
+  }
+}
+</script>
+
+</body>
+</html>
